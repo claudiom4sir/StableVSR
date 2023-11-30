@@ -8,3 +8,14 @@ We introduce a Frame-wise Bidirectional Sampling strategy to encourage the use o
 [28/11/2023] [Paper](https://arxiv.org/abs/2311.15908) published on arXiv.
 
 [27/11/2023] Code and pre-trained models will be released soon.
+
+### Citations
+```
+@article{rota2023enhancing,
+  title={Enhancing Perceptual Quality in Video Super-Resolution through Temporally-Consistent Detail Synthesis using Diffusion Models},
+  author={Rota, Claudio and Buzzelli, Marco and van de Weijer, Joost},
+  journal={arXiv preprint arXiv:2311.15908},
+  year={2023}
+}
+```
+
