@@ -28,4 +28,6 @@ https://github.com/user-attachments/assets/7b379ad5-ecba-468a-811a-0a9cc4c8456d
   year={2023}
 }
 ```
+### Acknowledgments
+The project is based on [diffusers](https://github.com/huggingface/diffusers).
 
