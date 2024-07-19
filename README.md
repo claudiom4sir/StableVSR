@@ -11,13 +11,13 @@ The code will be available soon.
 
 ### Demo video
 
-https://github.com/user-attachments/assets/8b254c13-73d3-4e98-9957-c1ca9fd0bad5
+https://github.com/user-attachments/assets/60c5fc3b-819c-4242-bd73-e5e3b0f7beb3
 
-https://github.com/user-attachments/assets/1e255283-d6c3-4e41-a4d9-1a7daec87c98
+https://github.com/user-attachments/assets/9fbc6fad-a088-41d9-be38-af53a8206916
 
-https://github.com/user-attachments/assets/e1458e05-5d2b-4274-a761-ed3fc58321c0
+https://github.com/user-attachments/assets/2f8a36f7-3b50-4eb1-baa8-e914a8931543
 
-https://github.com/user-attachments/assets/2aceddfa-7fa8-45d4-9b95-ac004c8599f0
+https://github.com/user-attachments/assets/7b379ad5-ecba-468a-811a-0a9cc4c8456d
 
 ### Citations
 ```
