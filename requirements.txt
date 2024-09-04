@@ -1,0 +1,15 @@
+accelerate==0.23.0
+basicsr==1.4.2
+bitsandbytes==0.43.3
+diffusers==0.21.1
+einops==0.8.0
+huggingface_hub==0.24.6
+numpy==1.24.4
+omegaconf==2.3.0
+packaging==24.1
+Pillow==10.4.0
+torch==2.0.1
+torchvision==0.15.2
+tqdm==4.66.5
+transformers==4.33.1
+xformers==0.0.21
