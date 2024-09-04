@@ -15,7 +15,7 @@ accelerate launch --num_processes $NUM_PROCESSES --main_process_port 29501 train
  --pretrained_model_name_or_path=$MODEL_ID \
  --pretrained_vae_model_name_or_path=$MODEL_ID \
  --output_dir=$OUTPUT_DIR \
- --dataset_config_path="/home/crota/diffusers/examples/super-resolution/config_video.yaml" \
+ --dataset_config_path="/home/crota/stablevsr/dataset/config_reds.yaml" \
  --learning_rate=5e-5 \
  --validation_steps=10 \
  --train_batch_size=8 \
