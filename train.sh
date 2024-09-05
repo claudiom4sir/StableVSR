@@ -17,7 +17,7 @@ accelerate launch --num_processes $NUM_PROCESSES --main_process_port 29501 train
  --output_dir=$OUTPUT_DIR \
  --dataset_config_path="/home/crota/stablevsr/dataset/config_reds.yaml" \
  --learning_rate=5e-5 \
- --validation_steps=10 \
+ --validation_steps=1000 \
  --train_batch_size=8 \
  --dataloader_num_workers=8 \
  --max_train_steps=20000 \
