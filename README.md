@@ -11,7 +11,7 @@ In this paper, we address the problem of enhancing perceptual quality in video s
 
 ## Usage
 ### Environment 
-The code is based on Python 3.8.17, CUDA 11, and [Diffusers](https://github.com/huggingface/diffusers). See ```requirements.txt``` for Python dependencies.
+The code is based on Python 3.8.17, CUDA 11, and [diffusers](https://github.com/huggingface/diffusers).
 #### Conda setup
 ```
 conda create -n stablevsr python=3.8.17 -y
@@ -22,11 +22,11 @@ pip install -r requirements.txt
 ```
 ### Datasets
 Download the REDS dataset from [here](https://seungjunnah.github.io/Datasets/reds.html) (sharp + low-resolution).
-Data are expected to be in the format ```ROOT/GT/SEQUENCES/FRAMES``` and ```ROOT/LR/SEQUENCES/FRAMES```.
+Data are expected to be in the format `root/hr/sequences/frames` and `root/lr/sequences/frames`.
 ### Pretrained models
-Pretrained models are available [here](https://huggingface.co/claudiom4sir/StableVSR). If you run the train or test code, you don't need to download them explicitly as they are fetched with ```.from_pretrained('claudiom4sir/StableVSR')```.
+Pretrained models are available [here](https://huggingface.co/claudiom4sir/StableVSR). If you run the train or test code, you don't need to download them explicitly as they are fetched with `.from_pretrained('claudiom4sir/StableVSR')`.
 ### Train
-Please adjust the ```dataroot``` options in ```dataset/config_reds.yaml```. Then, adjust the options in ```train.sh```. You can start the training using the following command:
+Adjust the `dataroot` options in `dataset/config_reds.yaml`. Then, adjust the options in `train.sh`. Use the following command to start training:
 ```
 bash ./train.sh
 ```
