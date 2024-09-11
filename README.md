@@ -10,8 +10,16 @@ In this paper, we address the problem of enhancing perceptual quality in video s
 <img width="640" alt="networkfull" src="https://github.com/user-attachments/assets/51390b6d-b069-49e1-a7ca-290099b2039f">
 
 ## Usage
-### Environment configuration
+### Environment 
 The code is based on Python 3.8.17, CUDA 11, and [Diffusers](https://github.com/huggingface/diffusers). See ```requirements.txt``` for Python dependencies.
+#### Conda setup
+```
+conda create -n stablevsr python=3.8.17 -y
+git clone https://github.com/claudiom4sir/StableVSR.git
+cd StableVSR
+conda activate stablevsr
+pip install -r requirements.txt
+```
 ### Datasets
 Download the REDS dataset from [here](https://seungjunnah.github.io/Datasets/reds.html) (sharp + low-resolution).
 Data are expected to be in the format ```ROOT/GT/SEQUENCES/FRAMES``` and ```ROOT/LR/SEQUENCES/FRAMES```.
