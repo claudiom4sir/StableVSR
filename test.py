@@ -35,6 +35,7 @@ pipeline = StableVSRPipeline.from_pretrained(model_id)
 scheduler = DDPMScheduler.from_pretrained(model_id, subfolder='scheduler')
 pipeline.scheduler = scheduler
 pipeline = pipeline.to(device)
+pipeline.enable_xformers_memory_efficient_attention()
 of_model = raft_large(weights=Raft_Large_Weights.DEFAULT)
 of_model.requires_grad_(False)
 of_model = of_model.to(device)
