@@ -32,7 +32,7 @@ bash ./train.sh
 ```
 ### Test
 ```
-python test.py --in_path YOUR_PATH_TO_LR_SEQS --out_path YOUR_OUTPUT_PATH --num_inference_steps 50
+python test.py --in_path YOUR_PATH_TO_LR_SEQS --out_path YOUR_OUTPUT_PATH --num_inference_steps 50 --controlnet_ckpt YOUR_PATH_TO_CONTROLNET_CKPT_FOLDER
 ```
 ### Memory requirements
 Training with the provided configuration requires about 17GB GPU. Evaluation on REDS (320x180 -> 1280x720) about 14.5 GB.
