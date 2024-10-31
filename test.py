@@ -1,5 +1,5 @@
 from pipeline.stablevsr_pipeline import StableVSRPipeline
-from diffusers import DDPMScheduler
+from diffusers import DDPMScheduler, ControlNetModel
 from accelerate.utils import set_seed
 from PIL import Image
 import os
@@ -21,6 +21,7 @@ parser = argparse.ArgumentParser(description="Test code for StableVSR.")
 parser.add_argument("--out_path", default='./StableVSR_results/', type=str, help="Path to output folder.")
 parser.add_argument("--in_path", type=str, required=True, help="Path to input folder (containing sets of LR images).")
 parser.add_argument("--num_inference_steps", type=int, default=50, help="Number of sampling steps")
+parser.add_argument("--controlnet_ckpt", type=str, default=None, help="Path to your folder with the controlnet checkpoint.")
 args = parser.parse_args()
 
 print("Run with arguments:")
@@ -31,7 +32,8 @@ for arg, value in vars(args).items():
 set_seed(42)
 device = torch.device('cuda')
 model_id = 'claudiom4sir/StableVSR'
-pipeline = StableVSRPipeline.from_pretrained(model_id)
+controlnet_model = ControlNetModel.from_pretrained(args.controlnet_ckpt if args.controlnet_ckpt is not None else model_id, subfolder='controlnet') # your own controlnet model
+pipeline = StableVSRPipeline.from_pretrained(model_id, controlnet=controlnet_model)
 scheduler = DDPMScheduler.from_pretrained(model_id, subfolder='scheduler')
 pipeline.scheduler = scheduler
 pipeline = pipeline.to(device)
