@@ -13,3 +13,6 @@ torchvision==0.15.2
 tqdm==4.66.5
 transformers==4.33.1
 xformers==0.0.21
+torchmetrics==1.1.1
+pyiqa==0.1.7
+DISTS-pytorch==0.1
