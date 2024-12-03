@@ -22,5 +22,5 @@ accelerate launch --num_processes $NUM_PROCESSES --main_process_port 29501 train
  --dataloader_num_workers=8 \
  --max_train_steps=20000 \
  --enable_xformers_memory_efficient_attention \
- --validation_image "/home/crota/Datasets/REDS/train/gt/020/00000000.png;/home/crota/Datasets/REDS/train/gt/020/00000001.png;/home/crota/Datasets/REDS/train/gt/020/00000002.png;/home/crota/Datasets/REDS/train/gt/020/00000003.png;/home/crota/Datasets/REDS/train/gt/020/00000004.png;/home/crota/Datasets/REDS/train/gt/020/00000005.png;/home/crota/Datasets/REDS/train/gt/020/00000006.png;/home/crota/Datasets/REDS/train/gt/020/00000007.png;/home/crota/Datasets/REDS/train/gt/020/00000008.png;/home/crota/Datasets/REDS/train/gt/020/00000009.png"  \
+ --validation_image "/home/crota/Datasets/REDS/train/bicubic/020/00000000.png;/home/crota/Datasets/REDS/train/bicubic/020/00000001.png;/home/crota/Datasets/REDS/train/bicubic/020/00000002.png;/home/crota/Datasets/REDS/train/bicubic/020/00000003.png;/home/crota/Datasets/REDS/train/bicubic/020/00000004.png;/home/crota/Datasets/REDS/train/bicubic/020/00000005.png;/home/crota/Datasets/REDS/train/bicubic/020/00000006.png;/home/crota/Datasets/REDS/train/bicubic/020/00000007.png;/home/crota/Datasets/REDS/train/bicubic/020/00000008.png;/home/crota/Datasets/REDS/train/bicubic/020/00000009.png"  \
   --validation_prompt ""
