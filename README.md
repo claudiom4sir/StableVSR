@@ -55,11 +55,13 @@ https://github.com/user-attachments/assets/7b379ad5-ecba-468a-811a-0a9cc4c8456d
 
 ## Citations
 ```
-@article{rota2023enhancing,
-  title={Enhancing Perceptual Quality in Video Super-Resolution through Temporally-Consistent Detail Synthesis using Diffusion Models},
+@inproceedings{rota2024enhancing,
+  title={Enhancing perceptual quality in video super-resolution through temporally-consistent detail synthesis using diffusion models},
   author={Rota, Claudio and Buzzelli, Marco and van de Weijer, Joost},
-  journal={arXiv preprint arXiv:2311.15908},
-  year={2023}
+  booktitle={European Conference on Computer Vision},
+  pages={36--53},
+  year={2024},
+  organization={Springer}
 }
 ```
 ## Contacts
